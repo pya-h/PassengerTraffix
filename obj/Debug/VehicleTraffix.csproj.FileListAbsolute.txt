@@ -1,0 +1,17 @@
+D:\pya.h\VehicleTraffix\bin\Debug\VehicleTraffX.exe.config
+D:\pya.h\VehicleTraffix\obj\Debug\VehicleTraffix.csproj.ResolveComReference.cache
+D:\pya.h\VehicleTraffix\bin\Debug\VehicleTraffX.exe
+D:\pya.h\VehicleTraffix\bin\Debug\VehicleTraffX.pdb
+D:\pya.h\VehicleTraffix\bin\Debug\BehComponents.dll
+D:\pya.h\VehicleTraffix\bin\Debug\System.Data.SQLite.dll
+D:\pya.h\VehicleTraffix\bin\Debug\System.Data.SQLite.EF6.dll
+D:\pya.h\VehicleTraffix\bin\Debug\System.Data.SQLite.EF6.pdb
+D:\pya.h\VehicleTraffix\bin\Debug\System.Data.SQLite.EF6.xml
+D:\pya.h\VehicleTraffix\obj\Debug\VehicleTraffix.csprojResolveAssemblyReference.cache
+D:\pya.h\VehicleTraffix\obj\Debug\VehicleTraffix.FilterForm.resources
+D:\pya.h\VehicleTraffix\obj\Debug\VehicleTraffix.SurveillanceForm.resources
+D:\pya.h\VehicleTraffix\obj\Debug\VehicleTraffix.MainForm.resources
+D:\pya.h\VehicleTraffix\obj\Debug\VehicleTraffix.Properties.Resources.resources
+D:\pya.h\VehicleTraffix\obj\Debug\VehicleTraffix.csproj.GenerateResource.Cache
+D:\pya.h\VehicleTraffix\obj\Debug\VehicleTraffX.exe
+D:\pya.h\VehicleTraffix\obj\Debug\VehicleTraffX.pdb
