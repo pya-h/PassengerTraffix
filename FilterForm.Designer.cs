@@ -1,4 +1,4 @@
-﻿namespace VehicleTraffix
+﻿namespace PassengerTraffix
 {
     partial class FilterForm
     {
@@ -58,19 +58,25 @@
             this.groupPersonSearch.Controls.Add(this.txtPersonSearch);
             this.groupPersonSearch.Controls.Add(this.rbByName);
             this.groupPersonSearch.Controls.Add(this.rbByNationalID);
-            this.groupPersonSearch.Location = new System.Drawing.Point(12, 12);
+            this.groupPersonSearch.Font = new System.Drawing.Font("2  Mitra", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.groupPersonSearch.Location = new System.Drawing.Point(24, 23);
+            this.groupPersonSearch.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupPersonSearch.Name = "groupPersonSearch";
+            this.groupPersonSearch.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupPersonSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupPersonSearch.Size = new System.Drawing.Size(259, 97);
+            this.groupPersonSearch.Size = new System.Drawing.Size(558, 215);
             this.groupPersonSearch.TabIndex = 0;
             this.groupPersonSearch.TabStop = false;
             this.groupPersonSearch.Text = "جستجوی شخص";
             // 
             // txtPersonSearch
             // 
-            this.txtPersonSearch.Location = new System.Drawing.Point(34, 51);
+            this.txtPersonSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPersonSearch.Font = new System.Drawing.Font("2  Mitra", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtPersonSearch.Location = new System.Drawing.Point(76, 112);
+            this.txtPersonSearch.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtPersonSearch.Name = "txtPersonSearch";
-            this.txtPersonSearch.Size = new System.Drawing.Size(188, 20);
+            this.txtPersonSearch.Size = new System.Drawing.Size(374, 59);
             this.txtPersonSearch.TabIndex = 1;
             // 
             // rbByName
@@ -78,9 +84,11 @@
             this.rbByName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.rbByName.AutoSize = true;
             this.rbByName.Checked = true;
-            this.rbByName.Location = new System.Drawing.Point(149, 28);
+            this.rbByName.Font = new System.Drawing.Font("2  Mitra", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.rbByName.Location = new System.Drawing.Point(308, 40);
+            this.rbByName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rbByName.Name = "rbByName";
-            this.rbByName.Size = new System.Drawing.Size(38, 17);
+            this.rbByName.Size = new System.Drawing.Size(81, 55);
             this.rbByName.TabIndex = 1;
             this.rbByName.TabStop = true;
             this.rbByName.Text = "نام";
@@ -90,9 +98,11 @@
             // 
             this.rbByNationalID.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.rbByNationalID.AutoSize = true;
-            this.rbByNationalID.Location = new System.Drawing.Point(70, 28);
+            this.rbByNationalID.Font = new System.Drawing.Font("2  Mitra", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.rbByNationalID.Location = new System.Drawing.Point(158, 40);
+            this.rbByNationalID.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rbByNationalID.Name = "rbByNationalID";
-            this.rbByNationalID.Size = new System.Drawing.Size(58, 17);
+            this.rbByNationalID.Size = new System.Drawing.Size(127, 55);
             this.rbByNationalID.TabIndex = 0;
             this.rbByNationalID.Text = "کد ملی";
             this.rbByNationalID.UseVisualStyleBackColor = true;
@@ -104,28 +114,36 @@
             this.groupVehicleSearch.Controls.Add(this.txtVehicleSearch);
             this.groupVehicleSearch.Controls.Add(this.rbByPlate);
             this.groupVehicleSearch.Controls.Add(this.rbByModel);
-            this.groupVehicleSearch.Location = new System.Drawing.Point(12, 135);
+            this.groupVehicleSearch.Font = new System.Drawing.Font("2  Mitra", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.groupVehicleSearch.Location = new System.Drawing.Point(24, 250);
+            this.groupVehicleSearch.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupVehicleSearch.Name = "groupVehicleSearch";
+            this.groupVehicleSearch.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupVehicleSearch.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupVehicleSearch.Size = new System.Drawing.Size(259, 97);
+            this.groupVehicleSearch.Size = new System.Drawing.Size(558, 229);
             this.groupVehicleSearch.TabIndex = 1;
             this.groupVehicleSearch.TabStop = false;
             this.groupVehicleSearch.Text = "جستجوی وسیله نقلیه";
             // 
             // txtVehicleSearch
             // 
-            this.txtVehicleSearch.Location = new System.Drawing.Point(34, 53);
+            this.txtVehicleSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtVehicleSearch.Font = new System.Drawing.Font("2  Mitra", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.txtVehicleSearch.Location = new System.Drawing.Point(76, 115);
+            this.txtVehicleSearch.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtVehicleSearch.Name = "txtVehicleSearch";
-            this.txtVehicleSearch.Size = new System.Drawing.Size(188, 20);
+            this.txtVehicleSearch.Size = new System.Drawing.Size(374, 59);
             this.txtVehicleSearch.TabIndex = 1;
             // 
             // rbByPlate
             // 
             this.rbByPlate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.rbByPlate.AutoSize = true;
-            this.rbByPlate.Location = new System.Drawing.Point(85, 30);
+            this.rbByPlate.Font = new System.Drawing.Font("2  Mitra", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.rbByPlate.Location = new System.Drawing.Point(158, 44);
+            this.rbByPlate.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rbByPlate.Name = "rbByPlate";
-            this.rbByPlate.Size = new System.Drawing.Size(43, 17);
+            this.rbByPlate.Size = new System.Drawing.Size(110, 55);
             this.rbByPlate.TabIndex = 1;
             this.rbByPlate.Text = "پلاک";
             this.rbByPlate.UseVisualStyleBackColor = true;
@@ -135,9 +153,11 @@
             this.rbByModel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.rbByModel.AutoSize = true;
             this.rbByModel.Checked = true;
-            this.rbByModel.Location = new System.Drawing.Point(145, 30);
+            this.rbByModel.Font = new System.Drawing.Font("2  Mitra", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.rbByModel.Location = new System.Drawing.Point(290, 44);
+            this.rbByModel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.rbByModel.Name = "rbByModel";
-            this.rbByModel.Size = new System.Drawing.Size(42, 17);
+            this.rbByModel.Size = new System.Drawing.Size(97, 55);
             this.rbByModel.TabIndex = 0;
             this.rbByModel.TabStop = true;
             this.rbByModel.Text = "مدل";
@@ -152,10 +172,13 @@
             this.groupّFilterDates.Controls.Add(this.dtpUntil);
             this.groupّFilterDates.Controls.Add(this.lblFrom);
             this.groupّFilterDates.Controls.Add(this.dtpFrom);
-            this.groupّFilterDates.Location = new System.Drawing.Point(12, 275);
+            this.groupّFilterDates.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.groupّFilterDates.Location = new System.Drawing.Point(24, 529);
+            this.groupّFilterDates.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupّFilterDates.Name = "groupّFilterDates";
+            this.groupّFilterDates.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.groupّFilterDates.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupّFilterDates.Size = new System.Drawing.Size(259, 136);
+            this.groupّFilterDates.Size = new System.Drawing.Size(558, 333);
             this.groupّFilterDates.TabIndex = 2;
             this.groupّFilterDates.TabStop = false;
             this.groupّFilterDates.Text = "بازه ی زمانی";
@@ -164,13 +187,15 @@
             // 
             this.btnSelectTimeRange.BackColor = System.Drawing.SystemColors.MenuBar;
             this.btnSelectTimeRange.BoldedForeColor = System.Drawing.Color.Blue;
+            this.btnSelectTimeRange.Font = new System.Drawing.Font("2  Mitra", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnSelectTimeRange.HolidayForeColor = System.Drawing.Color.Red;
             this.btnSelectTimeRange.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btnSelectTimeRange.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
             this.btnSelectTimeRange.IsBolded = false;
             this.btnSelectTimeRange.IsHoliday = false;
             this.btnSelectTimeRange.IsTrailing = false;
-            this.btnSelectTimeRange.Location = new System.Drawing.Point(34, 94);
+            this.btnSelectTimeRange.Location = new System.Drawing.Point(52, 244);
+            this.btnSelectTimeRange.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnSelectTimeRange.Name = "btnSelectTimeRange";
             this.btnSelectTimeRange.PushedAlways = false;
             this.btnSelectTimeRange.SecondBorderColor = System.Drawing.Color.Red;
@@ -178,7 +203,7 @@
             this.btnSelectTimeRange.SecondBorderWidth = 3F;
             this.btnSelectTimeRange.ShowFirstBorder = true;
             this.btnSelectTimeRange.ShowSecondBorder = false;
-            this.btnSelectTimeRange.Size = new System.Drawing.Size(153, 24);
+            this.btnSelectTimeRange.Size = new System.Drawing.Size(400, 69);
             this.btnSelectTimeRange.Style = BehComponents.ButtonX.ButtonStyles.Simple;
             this.btnSelectTimeRange.TabIndex = 5;
             this.btnSelectTimeRange.Text = "انتخاب بازه زمانی";
@@ -189,16 +214,19 @@
             // lblUntil
             // 
             this.lblUntil.AutoSize = true;
-            this.lblUntil.Location = new System.Drawing.Point(202, 67);
+            this.lblUntil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblUntil.Location = new System.Drawing.Point(486, 160);
+            this.lblUntil.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblUntil.Name = "lblUntil";
-            this.lblUntil.Size = new System.Drawing.Size(23, 13);
+            this.lblUntil.Size = new System.Drawing.Size(59, 44);
             this.lblUntil.TabIndex = 3;
             this.lblUntil.Text = "الی";
             // 
             // dtpUntil
             // 
-            this.dtpUntil.AnchorSize = new System.Drawing.Size(170, 27);
+            this.dtpUntil.AnchorSize = new System.Drawing.Size(432, 65);
             this.dtpUntil.BackColor = System.Drawing.Color.White;
+            this.dtpUntil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dtpUntil.CalendarBoldedDayForeColor = System.Drawing.Color.Blue;
             this.dtpUntil.CalendarBorderColor = System.Drawing.Color.CadetBlue;
             this.dtpUntil.CalendarDayRectTickness = 2F;
@@ -257,13 +285,15 @@
             this.dtpUntil.DropDownClosedWhenClickOnDays = false;
             this.dtpUntil.DropDownClosedWhenSelectedDateChanged = false;
             this.dtpUntil.Enabled = false;
+            this.dtpUntil.Font = new System.Drawing.Font("2  Mitra", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.dtpUntil.Format = BehComponents.DateTimePickerX.FormatDate.Long;
             this.dtpUntil.Format4Binding = "yyyy/MM/dd";
-            this.dtpUntil.Location = new System.Drawing.Point(17, 61);
+            this.dtpUntil.Location = new System.Drawing.Point(34, 144);
+            this.dtpUntil.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.dtpUntil.Name = "dtpUntil";
             this.dtpUntil.RightToLeftLayout = true;
             this.dtpUntil.ShowClearButton = false;
-            this.dtpUntil.Size = new System.Drawing.Size(170, 27);
+            this.dtpUntil.Size = new System.Drawing.Size(432, 65);
             this.dtpUntil.TabIndex = 2;
             this.dtpUntil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.dtpUntil.TextWhenClearButtonClicked = "";
@@ -271,16 +301,19 @@
             // lblFrom
             // 
             this.lblFrom.AutoSize = true;
-            this.lblFrom.Location = new System.Drawing.Point(206, 34);
+            this.lblFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblFrom.Location = new System.Drawing.Point(504, 58);
+            this.lblFrom.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblFrom.Name = "lblFrom";
-            this.lblFrom.Size = new System.Drawing.Size(15, 13);
+            this.lblFrom.Size = new System.Drawing.Size(47, 44);
             this.lblFrom.TabIndex = 1;
             this.lblFrom.Text = "از";
             // 
             // dtpFrom
             // 
-            this.dtpFrom.AnchorSize = new System.Drawing.Size(170, 27);
+            this.dtpFrom.AnchorSize = new System.Drawing.Size(432, 65);
             this.dtpFrom.BackColor = System.Drawing.Color.White;
+            this.dtpFrom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dtpFrom.CalendarBoldedDayForeColor = System.Drawing.Color.Blue;
             this.dtpFrom.CalendarBorderColor = System.Drawing.Color.CadetBlue;
             this.dtpFrom.CalendarDayRectTickness = 2F;
@@ -339,13 +372,15 @@
             this.dtpFrom.DropDownClosedWhenClickOnDays = false;
             this.dtpFrom.DropDownClosedWhenSelectedDateChanged = false;
             this.dtpFrom.Enabled = false;
+            this.dtpFrom.Font = new System.Drawing.Font("2  Mitra", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.dtpFrom.Format = BehComponents.DateTimePickerX.FormatDate.Long;
             this.dtpFrom.Format4Binding = "yyyy/MM/dd";
-            this.dtpFrom.Location = new System.Drawing.Point(17, 28);
+            this.dtpFrom.Location = new System.Drawing.Point(34, 54);
+            this.dtpFrom.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
             this.dtpFrom.Name = "dtpFrom";
             this.dtpFrom.RightToLeftLayout = true;
             this.dtpFrom.ShowClearButton = false;
-            this.dtpFrom.Size = new System.Drawing.Size(170, 27);
+            this.dtpFrom.Size = new System.Drawing.Size(432, 65);
             this.dtpFrom.TabIndex = 0;
             this.dtpFrom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.dtpFrom.TextWhenClearButtonClicked = "";
@@ -353,13 +388,15 @@
             // btnSubmitFilter
             // 
             this.btnSubmitFilter.BoldedForeColor = System.Drawing.Color.Blue;
+            this.btnSubmitFilter.Font = new System.Drawing.Font("2  Mitra", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.btnSubmitFilter.HolidayForeColor = System.Drawing.Color.Red;
             this.btnSubmitFilter.ImageFixedSize = new System.Drawing.Size(0, 0);
             this.btnSubmitFilter.ImageSizeMode = BehComponents.ButtonX.ImageSizeModes.Normal;
             this.btnSubmitFilter.IsBolded = false;
             this.btnSubmitFilter.IsHoliday = false;
             this.btnSubmitFilter.IsTrailing = false;
-            this.btnSubmitFilter.Location = new System.Drawing.Point(46, 439);
+            this.btnSubmitFilter.Location = new System.Drawing.Point(100, 873);
+            this.btnSubmitFilter.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnSubmitFilter.Name = "btnSubmitFilter";
             this.btnSubmitFilter.PushedAlways = false;
             this.btnSubmitFilter.SecondBorderColor = System.Drawing.Color.Red;
@@ -367,7 +404,7 @@
             this.btnSubmitFilter.SecondBorderWidth = 3F;
             this.btnSubmitFilter.ShowFirstBorder = true;
             this.btnSubmitFilter.ShowSecondBorder = false;
-            this.btnSubmitFilter.Size = new System.Drawing.Size(188, 38);
+            this.btnSubmitFilter.Size = new System.Drawing.Size(376, 73);
             this.btnSubmitFilter.Style = BehComponents.ButtonX.ButtonStyles.Blue;
             this.btnSubmitFilter.TabIndex = 3;
             this.btnSubmitFilter.Text = "اعمال فیلتر";
@@ -378,24 +415,28 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 255);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 513);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(258, 2);
+            this.pictureBox1.Size = new System.Drawing.Size(516, 4);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // FilterForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(283, 499);
+            this.ClientSize = new System.Drawing.Size(606, 967);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSubmitFilter);
             this.Controls.Add(this.groupّFilterDates);
             this.Controls.Add(this.groupVehicleSearch);
             this.Controls.Add(this.groupPersonSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FilterForm";
             this.Load += new System.EventHandler(this.FilterForm_Load);
             this.groupPersonSearch.ResumeLayout(false);

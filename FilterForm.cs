@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BehComponents;
 
-namespace VehicleTraffix
+namespace PassengerTraffix
 {
 
     public partial class FilterForm : Form
@@ -29,11 +29,13 @@ namespace VehicleTraffix
 
         private void btnSelectTimeRange_Click(object sender, EventArgs e)
         {
+            string[] btnTexts = { "انتخاب بازه زمانی", "حذف بازه زمانی" };
             useTimeRange = !useTimeRange;
             btnSelectTimeRange.Style = useTimeRange 
                 ? BehComponents.ButtonX.ButtonStyles.Green 
                 : BehComponents.ButtonX.ButtonStyles.Simple;
             dtpFrom.Enabled = dtpUntil.Enabled = useTimeRange;
+            btnSelectTimeRange.Text = btnTexts[useTimeRange ? 1 : 0];
         }
 
         private void btnSubmitFilter_Click(object sender, EventArgs e)

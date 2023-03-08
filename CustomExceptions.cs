@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VehicleTraffix
+namespace PassengerTraffix
 {
     class DatabaseOutOfReachException : Exception
     {
@@ -15,4 +15,9 @@ namespace VehicleTraffix
     {
         public FillRequiredFieldsException(string emptyFields) : base("فیلدهای زیر را بصورت کامل پر کنید:\n" + emptyFields) { }
     }
+    class WrongCredentialsException : Exception
+    {
+        public WrongCredentialsException() : base("رمز عبور وارد شده اشتباه است!") { }
+    }
+
 }

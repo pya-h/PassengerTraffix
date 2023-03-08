@@ -124,7 +124,7 @@
     <value>1401/11/10</value>
   </metadata>
   <metadata name="dtpUntil.SelectedDateInStringEnglish" xml:space="preserve">
-    <value>2023-01-30</value>
+    <value>2023/01/30</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="dtpUntil.ClearButtonImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -149,12 +149,12 @@
     <value>1401/11/10</value>
   </metadata>
   <metadata name="dtpFrom.SelectedDateInStringEnglish" xml:space="preserve">
-    <value>2023-01-30</value>
+    <value>2023/01/30</value>
   </metadata>
   <data name="dtpFrom.ClearButtonImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6
-        JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAACXBIWXMAAAsNAAALDQHtB8AsAAAB6ElE
+        JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAACXBIWXMAAAsMAAALDAE/QCLIAAAB6ElE
         QVQ4T2OgCvhvym/wz1hwzz8jfqf/DAxMUGHiwP9QBmag5vT/aV7//8U5//5nyh8IEoNKo4D/9gws/034
         lf4ZCeRBhSCC/0yEkv4ZC2z7n+T6/1+Sy59/JgJV6Ib8t5fnALnwX5zjb6D8HKgwBPwzEpH8ZyRkATYk
         2OT//0ir/0BXbfynJ84NlreQ4fznIL/xX7Dxb6Ca7v9aojxgjejgvxYD2z8T/oJ/rsq/QQYBbVr2z1BA

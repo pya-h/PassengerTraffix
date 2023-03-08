@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BehComponents;
 
-namespace VehicleTraffix
+namespace PassengerTraffix
 {
     public partial class SurveillanceForm : Form
     {
@@ -56,6 +56,9 @@ namespace VehicleTraffix
             {
                 dt.Columns[i].ColumnName = SQLiteInterface.TABLE_HEADERS_FA[i];
                 
+                //dgvTraffics.Columns[i].DefaultCellStyle.Font =
+                //    new Font("Mitra", 14.5f, GraphicsUnit.Point);
+
             }
 
         }
@@ -128,14 +131,14 @@ namespace VehicleTraffix
                 }
                 // storing Each row and column value to excel sheet  
                 int x = dgvTraffics.Rows.Count;
-                for (int i = 0; i < dgvTraffics.Rows.Count - 1; i++)
+                for (int i = 0; i < dgvTraffics.Rows.Count; i++)
                 {
                     for (int j = 0; j < dgvTraffics.Columns.Count; j++)
                     {
                         worksheet.Cells[i + 2, j + 1] = dgvTraffics.Rows[i].Cells[j].Value.ToString();
                     }
 
-                    SmoothUpdateProgressBar(pgbExporting, (int)(100 * (i + 2) / dgvTraffics.Rows.Count));
+                    SmoothUpdateProgressBar(pgbExporting, (int)(100 * (i + 1) / dgvTraffics.Rows.Count));
                 }
                 SmoothUpdateProgressBar(pgbExporting, 99);
                 worksheet.Columns.AutoFit();
@@ -166,7 +169,9 @@ namespace VehicleTraffix
 
         }
 
-
-
+        private void tsBtnSave_Click(object sender, EventArgs e)
+        {
+            SQLiteInterface.Database.Save(this.Data);
+        }
     }
 }
