@@ -10,7 +10,7 @@ namespace PassengerTraffix
 
     class SQLiteInterface
     {
-
+        public const string DATE_FORMAT = "yyyy/MM/dd";
         const string CONNECTION_STRING = "Data Source=database.db;Version=3;New=True;Compress=True;datetimeformat=CurrentCulture";
         private static SQLiteInterface database = new SQLiteInterface();
         SQLiteConnection connection;
@@ -63,7 +63,7 @@ namespace PassengerTraffix
             {
                 Console.WriteLine(ex.Message);
                 // make sure new fields (phonenumber and targetUnit) are added to the database.
-                AlterOldTables();
+                //AlterOldTables();
             }
 
         }
@@ -102,7 +102,7 @@ namespace PassengerTraffix
         public DataTable Fetch()
         {
             SQLiteCommand cmd = NewCommand(
-                string.Format("SELECT {0}, {1}, {2}, {3}, {4}, {5}, {6}, TIME({7}) AS {7}," +
+                string.Format("SELECT {0}, {1}, {2}, {3}, {4}, {5}, cast({6} as TEXT) as {6}, TIME({7}) AS {7}," +
                     " TIME({8}) AS {8} FROM `passengers`;", TABLE_HEADERS_EN[0], TABLE_HEADERS_EN[1], TABLE_HEADERS_EN[2],
                         TABLE_HEADERS_EN[3], TABLE_HEADERS_EN[4], TABLE_HEADERS_EN[5], TABLE_HEADERS_EN[6], 
                         TABLE_HEADERS_EN[7], TABLE_HEADERS_EN[8]));

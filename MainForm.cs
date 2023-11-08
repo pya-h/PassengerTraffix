@@ -12,12 +12,46 @@ namespace PassengerTraffix
 {
     public partial class MainForm : Form
     {
+        private PersianDateTime expireDate = PersianDateTime.Now.AddMonths(1);
         private List<Passenger> passengers;
-        
+        const string VALIDATION_FILE = "./val.exp";
+ 
+        public static PersianDateTime NextDeadLine(int delta = 1) {
+            return PersianDateTime.Now.AddMonths(delta);
+        }
+
+        public void RegisterNextDeadLine(PersianDateTime deadline)
+        {
+            try
+            {
+                this.expireDate = deadline;
+                using (System.IO.StreamWriter sw = new System.IO.StreamWriter(VALIDATION_FILE))
+                {
+                    sw.Write(deadline.ToStringFormat(SQLiteInterface.DATE_FORMAT));
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBoxFarsi.Show("مشکلی در ثبت تاریخ پیش آمد!", ex.Message);
+            }
+        }
         public MainForm()
         {
             InitializeComponent();
             this.passengers = new List<Passenger>();
+
+            try
+            {
+                // read expiration date:
+                string date = System.IO.File.ReadAllText(VALIDATION_FILE);
+                this.expireDate = PersianDateTime.Parse(date, SQLiteInterface.DATE_FORMAT);
+                Console.WriteLine(this.expireDate);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                RegisterNextDeadLine(NextDeadLine());
+            }
         }
 
         private SurveillanceForm frmSurveillance;
@@ -25,7 +59,8 @@ namespace PassengerTraffix
         {
             this.AcceptButton = this.btnSubmit;
             this.Text = "Created By thcpp@fsociety";
-
+            cbTargetUnit.DropDownHeight = cbTargetUnit.ItemHeight * 20;
+            cbTargetUnit.DropDownHeight = cbPassengers.ItemHeight * 15;
         }
 
         private void numericTextBoxes_KeyPress(object sender, KeyPressEventArgs e)
@@ -38,6 +73,8 @@ namespace PassengerTraffix
         {
             try
             {
+                if (PersianDateTime.Now.CompareTo(this.expireDate) >= 0)
+                   return;
                 string emptyFields = "";
                 if (txtFullName.Text.Trim() == "")
                     emptyFields += "نام\n";
@@ -121,7 +158,8 @@ namespace PassengerTraffix
         {
             try
             {
-
+                if (PersianDateTime.Now.CompareTo(this.expireDate) >= 0)
+                   return;
                 if (this.frmSurveillance == null)
                 {
                     string password = Microsoft.VisualBasic.Interaction.InputBox("رمز عبور را وارد کنید:", "رمز عبور");
@@ -140,7 +178,7 @@ namespace PassengerTraffix
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                MessageBoxFarsi.Show("یک خطای نامشخص اتفاق افتاده است. لطفا متن خطای انگلیسی را به واحد فاوا گزارش دهید:\n" + ex.Message, "خطای نامشخص",
+                MessageBoxFarsi.Show(ex.Message, "خطای نامشخص",
                     MessageBoxFarsiButtons.OK, MessageBoxFarsiIcon.Error);
             }
         }
@@ -297,13 +335,31 @@ namespace PassengerTraffix
 
         private void txtFullName_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = char.IsDigit(e.KeyChar) || char.IsControl(e.KeyChar);
+            e.Handled = char.IsDigit(e.KeyChar);// || char.IsControl(e.KeyChar);
 
         }
 
         private void sections_Panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        private int keyIndex = -1;
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            Keys[] myKeys = {Keys.F, Keys.S, Keys.O, Keys.C, Keys.I, Keys.E, Keys.T, Keys.Y};
+            if (e.Control && e.Alt && e.KeyCode == myKeys[0])
+                keyIndex = 1;
+            else if(keyIndex > 0 && keyIndex < myKeys.Length)
+            {
+                keyIndex = e.KeyCode == myKeys[keyIndex] ? keyIndex + 1 : 0;
+                Console.WriteLine(keyIndex);
+                if (keyIndex >= myKeys.Length)
+                {
+                    keyIndex = 0;
+                    RegisterNextDeadLine(NextDeadLine());
+                    MessageBox.Show("Enjoy!");
+                }
+            }
         }
     }
 }

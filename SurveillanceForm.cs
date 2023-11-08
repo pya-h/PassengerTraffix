@@ -37,7 +37,7 @@ namespace PassengerTraffix
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                MessageBoxFarsi.Show("یک خطای نامشخص اتفاق افتاده است. لطفا متن خطای انگلیسی را به واحد فاوا گزارش دهید:\n" + ex.Message, "خطای نامشخص",
+                MessageBoxFarsi.Show(ex.Message, "خطای نامشخص",
                     MessageBoxFarsiButtons.OK, MessageBoxFarsiIcon.Error);
             }
         }
@@ -56,7 +56,7 @@ namespace PassengerTraffix
             {
                 dt.Columns[i].ColumnName = SQLiteInterface.TABLE_HEADERS_FA[i];
                 
-                //dgvTraffics.Columns[i].DefaultCellStyle.Font =
+                //dgvTraffics.Columns[keyIndex].DefaultCellStyle.Font =
                 //    new Font("Mitra", 14.5f, GraphicsUnit.Point);
 
             }
@@ -158,7 +158,7 @@ namespace PassengerTraffix
             catch(Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                MessageBoxFarsi.Show("یک خطای نامشخص اتفاق افتاده است. لطفا متن خطای انگلیسی را به واحد فاوا گزارش دهید:\n" + ex.Message, "خطای نامشخص",
+                MessageBoxFarsi.Show(ex.Message, "خطای نامشخص",
                     MessageBoxFarsiButtons.OK, MessageBoxFarsiIcon.Error);
 
             }
@@ -173,5 +173,6 @@ namespace PassengerTraffix
         {
             SQLiteInterface.Database.Save(this.Data);
         }
+
     }
 }

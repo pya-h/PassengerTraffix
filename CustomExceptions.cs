@@ -8,7 +8,7 @@ namespace PassengerTraffix
 {
     class DatabaseOutOfReachException : Exception
     {
-        public DatabaseOutOfReachException() : base("اتصال به پایگاه داده با مشکل مواجه شد! در صورتی که نمیدانید مشکل از کجاست به واحد فاوا مراجعه فرمایید.") { }
+        public DatabaseOutOfReachException() : base("اتصال به پایگاه داده با مشکل مواجه شد!") { }
     }
     
     class FillRequiredFieldsException : Exception

@@ -53,7 +53,7 @@ namespace PassengerTraffix
                 if(txtVehicleSearch.Text.Trim() != "")
                 {
                     wholeData = wholeData.Select(string.Format("{0} LIKE '%{1}%'",
-                        rbByPlate.Checked ? SQLiteInterface.TABLE_HEADERS_EN[3] : SQLiteInterface.TABLE_HEADERS_EN[2],
+                        rbByPlate.Checked ? SQLiteInterface.TABLE_HEADERS_EN[5] : SQLiteInterface.TABLE_HEADERS_EN[4],
                         TraffixTools.RemoveWhiteSpaces(txtVehicleSearch.Text))).CopyToDataTable();
                 }
 
@@ -61,9 +61,9 @@ namespace PassengerTraffix
                 {
                     PersianDateTime from = dtpFrom.GetSelectedDateInPersianDateTime(),
                         until = dtpUntil.GetSelectedDateInPersianDateTime();
-
-                    wholeData = wholeData.Select(string.Format("#{0}# <= {1} AND #{2}# >= {1}", from.ToShortDateString(), SQLiteInterface.TABLE_HEADERS_EN[4],
-                        until.ToShortDateString())).CopyToDataTable();
+                    wholeData = wholeData.Select(string.Format("'{0}' <= {1} AND '{2}' >= {1}",
+                        from.ToStringFormat(SQLiteInterface.DATE_FORMAT), SQLiteInterface.TABLE_HEADERS_EN[6],
+                        until.ToStringFormat(SQLiteInterface.DATE_FORMAT))).CopyToDataTable();
                 }
                 this.parent.Data = wholeData;
             }
